@@ -2,12 +2,7 @@ function menu(){
 
   let menuOption = event.target.id
 
-  fetch(`https://www.amerigopassaro.it/projects/galax/riassunti/${menuOption}.json`,
-    {
-      headers: {
-        Origin: 'https://www.amerigopassaro.it/'
-      }
-    })
+  fetch(`riassunti/${menuOption}.json`)
     .then(response => response.json())
     .then(commits => console.log(commits[0]));
 
