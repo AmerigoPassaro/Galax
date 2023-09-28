@@ -1,0 +1,18 @@
+{
+  "key": "riassunti",
+  "name": "Riassunti Campagna"
+  "capitoli": {
+    "primo": {
+      "key": "c1",
+      "name": "Capitolo 1 - ???"
+    },
+    "secondo": {
+      "key": "c2",
+      "name": "Capitolo 2 - ???"
+    },
+    "terzo": {
+      "key": "c3",
+      "name": "Capitolo 3 - ???"
+    }
+  }
+}

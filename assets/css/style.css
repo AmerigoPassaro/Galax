@@ -1,0 +1,45 @@
+*{
+  margin: 0px;
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.1em;
+}
+
+header, nav, footer{
+  display: flex;
+  justify-content: center;
+}
+
+header{
+  padding: 30px 0px;
+  background-color: #f0f0f0;
+}
+
+nav, footer{
+  padding: 20px 0px;
+  background-color: #e0e0e0;
+}
+
+main{
+  padding: 20px 0px;
+  background-color: #d0d0d0;
+  text-align: center;
+}
+
+h1, .menu-item, footer{
+  text-transform: uppercase;
+}
+
+.menu-item{
+  display: inline;
+  margin-right: 40px;
+  font-weight: 700;
+}
+
+.menu-item button{
+  border: 0px;
+  background-color: inherit;
+  font-weight: inherit;
+  text-transform: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
