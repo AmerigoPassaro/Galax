@@ -4,6 +4,6 @@ function menu(){
 
   fetch(`https://amerigopassaro.github.io/Galax/assets/js/riassunti/${menuOption}.json`)
     .then(response => response.json())
-    .then(commits => alert(commits[0]))
+    .then(commits => alert(commits.name))
 
 }
