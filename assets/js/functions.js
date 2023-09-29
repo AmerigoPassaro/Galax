@@ -2,9 +2,8 @@ function menu(){
 
   let menuOption = event.target.id
 
-  fetch("https://amerigopassaro.github.io/Galax/assets/js/riassunti/riassunti.json")
+  fetch(`https://amerigopassaro.github.io/Galax/assets/js/riassunti/${menuOption}.json`)
     .then(response => response.json())
     .then(commits => alert(commits[0]))
 
-  alert(menuOption)
 }
