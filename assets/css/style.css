@@ -4,7 +4,7 @@
   letter-spacing: 0.1em;
 }
 
-header, nav, footer{
+header, nav, main, footer{
   display: flex;
   justify-content: center;
 }
