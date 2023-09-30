@@ -1,3 +1,21 @@
 {
   "number_chapter": 4
+  "chapters": {
+    "first": {
+      "id": 1,
+      "name": "chapter 1"
+    },
+    "second": {
+      "id": 2,
+      "name": "chapter 2"
+    },
+    "third": {
+      "id": 3,
+      "name": "chapter 3"
+    },
+    "fourth": {
+      "id": 4,
+      "name": "chapter 4"
+    }
+  }
 }
