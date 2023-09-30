@@ -15,7 +15,7 @@ function menu(){
 
       for(var i = 0; commits.number_chapter >= i; i++){
         myTable.insertAdjacentHTML("beforeend",
-        `<tr id="prova"><td>${commits.chapters.id[i]}</td><td>${commits.chapters.name[i]}</td><td>Prova</td></tr>`)
+        `<tr id="prova"><td>${commits.chapters[i].id}</td><td>${commits.chapters[i].name}</td><td>Prova</td></tr>`)
       }
 
     })
