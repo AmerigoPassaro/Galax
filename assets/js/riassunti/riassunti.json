@@ -1,3 +1,10 @@
 {
   "id": "01",
+  "name": "riassunti",
+  "chapters": {
+    "01": {
+      "id": "001",
+      "name": "chapter 01"
+    }
+  }
 }
