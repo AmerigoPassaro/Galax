@@ -9,6 +9,6 @@ function menu(){
 
   fetch(`https://amerigopassaro.github.io/Galax/assets/js/riassunti/${menuOption}.json`)
     .then(response => response.json())
-    .then(commits => { myTable.insertAdjacentHTML("beforeend", `<tr id="prova"><td>Prova</td><td>Prova</td><td>Prova</td></tr>`) })
+    .then(commits => alert("Ciao"))
 
 }
