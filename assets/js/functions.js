@@ -10,7 +10,6 @@ function menu(){
   fetch(`https://amerigopassaro.github.io/Galax/assets/js/riassunti/${menuOption}.json`)
     .then(response => response.json())
     .then(commits => {
-      alert("Il contatore è uguale a" + i);
       for (var i = 0; i < commits.length; i++){
         myTable.insertAdjacentHTML("beforeend",
         `<tr id="prova">
@@ -18,7 +17,6 @@ function menu(){
         <td>Prova</td>
         <td>Prova</td>
         </tr>`)}
-      alert("Il contatore è uguale a" + i);
     })
 
 }
