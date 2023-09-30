@@ -2,7 +2,7 @@ let mySection = document.querySelector("#main-section");
 
 function menu(){
 
-  mySection.style.display = "none";
+  mySection.innerHTML = "Sono vuoto!" ;
 
   let menuOption = event.target.id
 
