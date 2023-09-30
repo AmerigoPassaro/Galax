@@ -11,14 +11,13 @@ function menu(){
     .then(response => response.json())
     .then(commits => {
       alert("Il contatore è uguale a" + i);
-      for (let i = 0; i < commits.length; i++){
-        bodyTable.insertAdjacentHTML("beforeend",
-        `<tr id="${i}">
-        <td>${i+1}</td>
-        <td>${comits[i]}</td>
-        <td>${i+1}</td>
-        </tr>`)}
-      alert("Il contatore è uguale a" + i);
+      // for (var i = 0; i < commits.length; i++){
+      //   bodyTable.insertAdjacentHTML("beforeend",
+      //   `<tr id="prova">
+      //   <td>Prova</td>
+      //   <td>Prova</td>
+      //   <td>Prova</td>
+      //   </tr>`)}
     })
 
 }
