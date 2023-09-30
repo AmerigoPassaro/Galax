@@ -13,7 +13,7 @@ function menu(){
     .then(response => response.json())
     .then(commits => {
 
-      for(var i = 0; commits.length >= i; i++){
+      for(var i = 0; commits.number_chapter >= i; i++){
         myTable.insertAdjacentHTML("beforeend",
         `<tr id="prova"><td>Prova</td><td>Prova</td><td>Prova</td></tr>`)
       }
