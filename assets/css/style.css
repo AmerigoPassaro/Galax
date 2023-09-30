@@ -47,3 +47,7 @@ h1, .menu-item, footer{
 article{
   margin: 20px 0px;
 }
+
+article h1{
+  margin-bottom: 10px;
+}
