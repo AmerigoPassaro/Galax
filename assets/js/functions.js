@@ -1,4 +1,4 @@
-let mySection = document.querySelector(#main-section);
+let mySection = document.querySelector("#main-section");
 
 function menu(){
 
