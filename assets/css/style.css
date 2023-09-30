@@ -43,3 +43,7 @@ h1, .menu-item, footer{
   font-size: inherit;
   cursor: pointer;
 }
+
+article{
+  margin: 20px 0px;
+}
