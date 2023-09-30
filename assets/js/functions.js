@@ -9,14 +9,16 @@ function menu(){
 
   fetch(`https://amerigopassaro.github.io/Galax/assets/js/riassunti/${menuOption}.json`)
     .then(response => response.json())
-    .then(commits => alert(commits.length))
-      // for (var i = 0; i < commits.length; i++){
-      //   bodyTable.insertAdjacentHTML("beforeend",
-      //   `<tr id="prova">
-      //   <td>Prova</td>
-      //   <td>Prova</td>
-      //   <td>Prova</td>
-      //   </tr>`)}
-
+    .then(commits => {
+      alert("Il contatore è uguale a" + i);
+      for (var i = 0; i < commits.length; i++){
+        myTable.insertAdjacentHTML("beforeend",
+        `<tr id="prova">
+        <td>Prova</td>
+        <td>Prova</td>
+        <td>Prova</td>
+        </tr>`)}
+      alert("Il contatore è uguale a" + i);
+    })
 
 }
