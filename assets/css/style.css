@@ -51,3 +51,7 @@ article{
 .paragraph-title{
   margin-bottom: 10px;
 }
+
+#main-table{
+  display: inline;
+}
