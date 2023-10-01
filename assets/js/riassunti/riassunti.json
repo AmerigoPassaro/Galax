@@ -1,7 +1,7 @@
 {
   "number_chapter": 4,
-  "chapters": [
-      {
+  "chapters":
+    [{
         "id": 1,
         "name": "chapter 1"
       },
@@ -16,7 +16,6 @@
       {
         "id": 4,
         "name": "chapter 1"
-      },
-    ]
+    }]
   }
 }
