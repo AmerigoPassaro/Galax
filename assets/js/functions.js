@@ -16,11 +16,11 @@ function menu(){
         myTable.insertAdjacentHTML("beforeend",
         `<tr id="prova">
           <td>${i+1}</td>
-          <td>${commits.chapters[i].name}</td>
+          <td><button onclick="chapters()" id="${commits.chapters[i].id}">${commits.chapters[i].name}</button></td>
           <td>${commits.chapters[i].num_episodes}</td>
         </tr>`)
       }
     })
 
-    
+
 }
