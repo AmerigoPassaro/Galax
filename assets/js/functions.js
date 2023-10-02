@@ -14,9 +14,9 @@ function menu(){
     .then(commits => {
       for(var i = 0; commits.number_chapter >= i; i++){
         myTable.insertAdjacentHTML("beforeend",
-        `<tr id="prova">
+        `<tr id="${commits.chapters[i].id}">
           <td>${i+1}</td>
-          <td><button onclick="chapters()" id="${commits.chapters[i].id}">${commits.chapters[i].name}</button></td>
+          <td><button onclick="chapters()">${commits.chapters[i].name}</button></td>
           <td>${commits.chapters[i].num_episodes}</td>
         </tr>`)
       }
