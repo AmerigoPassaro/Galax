@@ -4,7 +4,9 @@ let myTable = document.querySelector("#main-table-body");
 function menu(){
 
   // Cancellazione elementi nella section
-  mySection.innerHTML = "" ;
+  mySection.innerHTML = "";
+  // Comparsa tabella
+  myTable.style.display = "inline";
   // Individuazione elemento menu cliccato
   let menuOption = event.target.id
   // Collegamento al Json
