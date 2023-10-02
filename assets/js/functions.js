@@ -6,7 +6,7 @@ function menu(){
   // Cancellazione elementi nella section
   mySection.innerHTML = "";
   // Comparsa tabella
-  myTable.style.display = "inline";
+  myTable.parentElement.style.display = "inline";
   // Individuazione elemento menu cliccato
   let menuOption = event.target.id
   // Collegamento al Json
