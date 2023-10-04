@@ -1,0 +1,24 @@
+{
+  "number_sessions": 3,
+  "sessions":
+    [
+      {
+        "id": "s1",
+        "name": "Sessione 1",
+        "description": "Prova"
+      },
+
+      {
+        "id": "s2",
+        "name": "Sessione 2",
+        "description": "Prova"
+      },
+
+      {
+        "id": "s3",
+        "name": "Sessione 3",
+        "description": "Prova"
+      }
+
+    ]
+}

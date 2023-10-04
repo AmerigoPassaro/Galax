@@ -24,5 +24,30 @@ function menu(){
       }
     })
 
+}
+
+function chapters(){
+
+  // Cancellazione elementi nella section
+  mySection.innerHTML = "";
+  // Comparsa tabella
+  myTable.parentElement.style.display = "inline";
+  // Individuazione elemento menu cliccato
+  let chapterOption = event.target.parentElement.id
+  alert(chapterOption)
+  // Collegamento al Json
+  fetch(`https://amerigopassaro.github.io/Galax/assets/js/riassunti/${chapterOption}.json`)
+    .then(response => response.json())
+  // Estrapolazione e visualizzazione dei "record"
+    .then(commits => {
+      for(var j = 0; commits.number_chapter >= j; j++){
+        myTable.insertAdjacentHTML("beforeend",
+        `<tr id="${commits.sessions[j].id}">
+          <td>${j+1}</td>
+          <td><button onclick="chapters()">${commits.sessions[j].name}</button></td>
+          <td>${commits.sessions[j].description}</td>
+        </tr>`)
+      }
+    })
 
 }
