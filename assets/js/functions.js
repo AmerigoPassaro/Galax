@@ -41,12 +41,36 @@ function chapters(){
     .then(commits => {
       for(var j = 0; commits.number_sessions >= j; j++){
         myTable.insertAdjacentHTML("beforeend",
-        `<tr id="${commits.sessions[j].id}">
+        `<tr id="${commits.sessions[j].id}" title="${commits.name}">
           <td>${j+1}</td>
-          <td><button onclick="chapters()">${commits.sessions[j].name}</button></td>
+          <td><button onclick="openDes()">${commits.sessions[j].name}</button></td>
           <td>${commits.sessions[j].description}</td>
         </tr>`)
       }
     })
+
+}
+
+function openDes(){
+
+  // Cancellazione elementi nella section
+  myTable.parentElement.innerHTML = "";
+  // // Individuazione elemento menu cliccato
+  let sessionOrigin = event.target.parentElement.parentElement.title;
+  alert(sessionOrigin)
+  // Collegamento al Json
+  fetch(`https://amerigopassaro.github.io/Galax/assets/js/riassunti/${sessionOrigin}.json`)
+    .then(response => response.json())
+  // Estrapolazione e visualizzazione dei "record"
+    .then(commits => {
+      mySection.insertAdjacentHTML("beforeend",
+      `<article>
+        <h2 class="paragraph-title">
+          ${commits.sessions.name}
+        </h2>
+        <p id="${commits.sessions.id}">
+          ${commits.sessions.description}
+        </p>
+      </article>`)})
 
 }
